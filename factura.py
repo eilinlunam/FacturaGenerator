@@ -56,14 +56,14 @@ def obtener_factura(nombre, ident, cel, email, dir, fecha, descr, des1, val1, de
     title_font = ImageFont.truetype('Zag Regular.otf', 60)
     descr=agregar_linea(descr, number=1045)
     ancho3 = image_editable.textsize(descr, font=title_font)[0]
-    numero2 = (ancho-ancho3-250)/2
+    numero2 = (ancho-ancho3-270)/2
     image_editable.text((numero2, 955), descr, (100,100,100), font=title_font, fontsize=25)
 
     # Fecha
     title_font = ImageFont.truetype('Zag Regular.otf', 60)
     ancho4 = image_editable.textsize(fecha, font=title_font)[0]
     numero3 = (ancho-ancho4-250)/2
-    image_editable.text((numero2, 1180), fecha, (100,100,100), font=title_font, fontsize=25)
+    image_editable.text((numero3, 1180), fecha, (100,100,100), font=title_font, fontsize=25)
 
     # iNFORMACION Y DESCRIPCIONES
     title_font = ImageFont.truetype('Zag Regular.otf', 40)
